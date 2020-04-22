@@ -1,38 +1,48 @@
-.App {
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  scroll-snap-type: y proximity;
+  overflow: scroll;
+  overflow-y: scroll;
+  scroll-padding-top: 150px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  margin: 0; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section {
+  padding: 7em;
+  height: 92vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section:nth-of-type(1) {
+  background: url("https://i.imgur.com/4d3nIpzh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+section:nth-of-type(2) {
+  background: #3c91e6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section:nth-of-type(3) {
+  background: #fa824c;
+}
+
+section:nth-of-type(4) {
+  background: #9fd356;
+}
+
+header {
+  height: 80px;
+  background:rgba(52, 46, 55,0.8);
+  color: #fafffd;
+  top: 0; 
+  position: sticky;
 }
