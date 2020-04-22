@@ -18,6 +18,7 @@ function App() {
       </section>
       <section>
         <h1>About Me</h1>
+        <img src="" />
       </section>
       <section>
         <h1>Contact Me</h1>
