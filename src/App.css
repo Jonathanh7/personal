@@ -20,7 +20,7 @@ h2{
 
 section {
   padding: 7em;
-  height: 96vh;
+  height: 100vh;
   width: 100%;
   box-sizing: border-box;
 }
@@ -47,16 +47,47 @@ section:nth-of-type(4) {
   font-size: 30px;
 }
 
+.wyze:hover {
+  text-shadow: 2px 2px 3px white;
+  background-color: white;
+  background: white;
+  box-shadow: 10px 10px 20px rgba(255, 255, 255);
+}
+
 .time{
 position: relative; 
-bottom: 40%;
+bottom: 30%;
+}
+.pics{
+  display:flex; 
+  justify-content: space-evenly;
 }
 
 header {
-  height: 60px;
+  height: 70px;
   background:rgba(52, 46, 55,0.8);
   color: #fafffd;
   top: 0; 
   position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+ul{
+  margin: 0; 
+  display: flex; 
+  font-size: 40px;
+  justify-content: space-evenly; 
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
 
