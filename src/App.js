@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import { Link, Route } from "react-router-dom";
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -76,7 +77,7 @@ function App() {
           fervor for working on innovative ideas. As my prior experiences shows,
           obtaining results whilst bringing new ideas is a continuous interest
           of mine. Always happy to meet new people from all backgrounds as well
-          as working in team environments.{" "}
+          as working in team environments.
         </p>
         <div className="icons">
         <i class="fab fa-js-square fa-2x animated infinite pulse"></i>
@@ -90,8 +91,15 @@ function App() {
 
       <section id={"contact"}>
         <h1>Contact Me</h1>
+        <div className="ref">
+        <i class="fas fa-envelope-square">Jonathanh949@gmail.com</i>
+          <a href="https://www.linkedin.com/in/jonathan-hernandez-893194a4/"><i class="fab fa-linkedin fa-3x"></i></a>
+          
+        </div>
       </section>
+      <Footer />
     </div>
+    
   );
 }
 
