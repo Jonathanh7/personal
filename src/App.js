@@ -2,9 +2,13 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import { Link, Route } from "react-router-dom";
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 
 function App() {
+  const copied = () => {
+    alert("Email Copied");
+  };
+
   return (
     <div className="App">
       <Header />
@@ -80,26 +84,31 @@ function App() {
           as working in team environments.
         </p>
         <div className="icons">
-        <i class="fab fa-js-square fa-2x animated infinite pulse"></i>
-        <i class="fab fa-html5 fa-2x animated infinite pulse"></i>
-        <i class="fab fa-css3 fa-2x animated infinite pulse"></i>
-        <i class="fab fa-react fa-2x animated infinite pulse"></i>
-        <i class="fas fa-gem fa-2x animated infinite pulse"></i>
-        <i class="fab fa-npm fa-2x animated infinite pulse"></i>
+          <i class="fab fa-js-square fa-2x animated infinite pulse"></i>
+          <i class="fab fa-html5 fa-2x animated infinite pulse"></i>
+          <i class="fab fa-css3 fa-2x animated infinite pulse"></i>
+          <i class="fab fa-react fa-2x animated infinite pulse"></i>
+          <i class="fas fa-gem fa-2x animated infinite pulse"></i>
+          <i class="fab fa-npm fa-2x animated infinite pulse"></i>
         </div>
       </section>
 
       <section id={"contact"}>
         <h1>Contact Me</h1>
         <div className="ref">
-        <i class="fas fa-envelope-square">Jonathanh949@gmail.com</i>
-          <a href="https://www.linkedin.com/in/jonathan-hernandez-893194a4/"><i class="fab fa-linkedin fa-3x"></i></a>
-          
+          <i
+            className="email fas fa-envelope-square"
+              onClick={() => { navigator.clipboard.writeText('Jonathanh949@gmail.com').then(copied())}} 
+          >
+            Jonathanh949@gmail.com
+          </i>
+          <a href="https://www.linkedin.com/in/jonathan-hernandez-893194a4/">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
         </div>
       </section>
       <Footer />
     </div>
-    
   );
 }
 
