@@ -1,7 +1,8 @@
-@import "~animate.css/animate.css"; 
+@import "~animate.css/animate.css";
 
 html {
   margin: 0;
+  height: 100vh;
 }
 
 body {
@@ -11,12 +12,18 @@ body {
   overflow-y: scroll;
   scroll-padding-top: 150px;
   text-align: center;
-  font-family: 'Cabin Sketch', cursive;
+  font-family: "Cabin Sketch", cursive;
 }
-h1{
-  margin: 0; 
+.first {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
-h2{
+h1 {
+  margin: 0;
+}
+h2 {
   font-size: 35px;
 }
 
@@ -51,51 +58,51 @@ section:nth-of-type(4) {
 
 .wyze:hover {
   text-shadow: 2px 2px 3px white;
-   background-color: white;
-  background: white; 
+  background-color: white;
+  background: white;
   box-shadow: 4px 4px 12px rgba(255, 255, 255);
 }
 
-.time{
-position: relative; 
-bottom: 30%;
+.time {
+  position: relative;
+  bottom: 30%;
 }
-.pics{
-  display:flex; 
+.pics {
+  display: flex;
   justify-content: space-evenly;
 }
 
 header {
   height: 70px;
-  background:rgba(52, 46, 55,0.8);
+  background: rgba(52, 46, 55, 0.8);
   color: #fafffd;
-  top: 0; 
+  top: 0;
   position: sticky;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-ul{
-  margin: 0; 
-  display: flex; 
+ul {
+  margin: 0;
+  display: flex;
   font-size: 40px;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   list-style: none;
   text-decoration: none;
   width: 100%;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-p{
+p {
   font-size: 26px;
 }
 
-.info{
+.info {
   font-size: 24px;
   border: 2px solid #b0bec5;
   border-radius: 8px;
@@ -103,21 +110,72 @@ p{
   background: white;
 }
 
-.icons{
+.icons {
   display: flex;
   justify-content: space-evenly;
 }
 
-.ref{
+.ref {
   display: flex;
   justify-content: space-around;
   flex-direction: column-reverse;
 }
 footer {
-  background:#858187;
+  background: #858187;
   color: white;
 }
 
-.email:hover{
-background-color: gold;
+.email:hover {
+  background-color: gold;
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  section:nth-of-type(1) {
+    background: url("https://i.imgur.com/4d3nIpzl.jpg");
+    background-position: center;
+    background-size: cover;
+    font-size: 25px;
+  }
+
+  .time {
+    position: relative;
+    bottom: 100px;
+    width: 100vw;
+    display: flex;
+    left: 150px;
+    height: 10vh;
+  }
+  header {
+    width: 100%;
+  }
+
+  .name {
+    position: relative;
+    left: -60px;
+  }
+  .follow {
+    position: relative;
+    left: -50px;
+  }
+
+  img {
+    height: 10vh;
+  }
+  p {
+    font-size: 18px;
+  }
+  .pics {
+    border: 1px solid red;
+
+    width: 100vw;
+  }
+  #projects {
+    display: flex;
+    justify-content: center;
+  }
 }

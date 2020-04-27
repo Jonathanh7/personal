@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <section>
-        <h1 className="animated infinite bounce delay-2s">Hi I'm Jonathan</h1>
-        <h2>A Friendly Full-Stack Developer</h2>
+      <section className="first">
+        <h1 className=" name animated infinite bounce delay-2s">Hi I'm Jonathan</h1>
+        <h2 className="follow">A Friendly Full-Stack Developer</h2>
       </section>
 
       <section id={"projects"}>
