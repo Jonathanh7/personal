@@ -75,7 +75,7 @@ function App() {
       </section>
 
       <section id={"about"}>
-        <h1>About Me</h1>
+        <h1 className="heading">About Me</h1>
         <p className="info">
           I'm a Full-Stack Developer with a background in sales, who has a
           fervor for working on innovative ideas. As my prior experiences shows,
